@@ -99,8 +99,7 @@
     "title": "Gmail Focus",
     "icon": "📧",
     "url_patterns": [
-      "mail.google.com",
-      "gmail.com"
+      "mail.google.com"
     ],
     "default_url": "https://mail.google.com/mail/u/0/#inbox",
     "use_history": true
