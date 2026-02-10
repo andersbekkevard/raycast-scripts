@@ -32,7 +32,7 @@ get_most_recent_url() {
     # Filter out common non-content pages
     local most_recent_url
     most_recent_url=$(sqlite3 "$temp_history"         "SELECT url FROM urls 
-         WHERE (url LIKE '%mail.google.com%' OR url LIKE '%gmail.com%')
+         WHERE (url LIKE '%mail.google.com%')
          AND url NOT LIKE '%/Pages/Auth/Login.aspx%'
          AND url NOT LIKE '%/Pages/Auth/Logout.aspx%'
          ORDER BY last_visit_time DESC 
@@ -77,7 +77,7 @@ tell application "Comet"
     -- Check if current tab matches the URL pattern
     set currentTabMatches to false
     if currentTabURL is not "" then
-        if currentTabURL contains "mail.google.com" or currentTabURL contains "gmail.com" then
+        if currentTabURL contains "mail.google.com" then
             set currentTabMatches to true
             set anyMatchingTabFound to true
         end if
@@ -92,7 +92,7 @@ tell application "Comet"
         repeat with t from 1 to (count of windowTabs)
             try
                 set tabURL to URL of tab t of window w
-                if tabURL contains "mail.google.com" or tabURL contains "gmail.com" then
+                if tabURL contains "mail.google.com" then
                     set end of matchingTabs to {windowIndex:w, tabIndex:t}
                     set anyMatchingTabFound to true
                     -- Check if this is the current tab
@@ -206,7 +206,7 @@ tell application "Comet"
     -- Check if current tab matches the URL pattern
     set currentTabMatches to false
     if currentTabURL is not "" then
-        if currentTabURL contains "mail.google.com" or currentTabURL contains "gmail.com" then
+        if currentTabURL contains "mail.google.com" then
             set currentTabMatches to true
             set anyMatchingTabFound to true
         end if
@@ -221,7 +221,7 @@ tell application "Comet"
         repeat with t from 1 to (count of windowTabs)
             try
                 set tabURL to URL of tab t of window w
-                if tabURL contains "mail.google.com" or tabURL contains "gmail.com" then
+                if tabURL contains "mail.google.com" then
                     set end of matchingTabs to {windowIndex:w, tabIndex:t}
                     set anyMatchingTabFound to true
                     -- Check if this is the current tab
