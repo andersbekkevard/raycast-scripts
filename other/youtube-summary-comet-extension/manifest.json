@@ -1,5 +1,6 @@
 {
   "manifest_version": 3,
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlzYLt4iXwtwaNpmuiIILyrlK2uyun3RcJX6GqjKVAMuK42n08gl4hfke8b4cULcpNBC1eFE2dWWYWr3xFu/cMOUNH76HyWTrbR5KcvdozSf8/9x1CtSe79fkBN3OYRdLDGwNIs0imsKPHxo05xSPBFPEqrEt5kvrUfTYlaRnEcky6YBSh14eh17nCI9XzIAuH9No1TeuIH+bzTPDalzkIXU7AvoAsfEAta3tmS2mQTKcB2SCL7vvvJXnCfskdIPSOZcjJd3geKxdygt1ijTVfP51m7vtZTDdJUUKYun3Po3gFWn5822IbiTjX14XXyOU4bu4i788WckU7igPjOOqswIDAQAB",
   "name": "Anders YouTube Summary",
   "version": "1.0.0",
   "description": "Submits a locally fetched YouTube transcript to ChatGPT without timing-based keyboard automation.",
